@@ -8,9 +8,13 @@ export default function Home({data}) {
 
   const contos = [];
 
+  //console.log(data);
+
+  //console.log(data[0].content.rendered.split(" ")[6].split('"')[1]);
+
   for (let i = 0; i < data.length; i++) {
     contos.push(<div>
-      <img class="capa" src={data[i].content.rendered.split(" ")[7].split('"')[1]}></img>
+      <img class="capa" src={data[i].content.rendered.split(" ")[6].split('"')[1]}></img>
       <p class="titulo">{data[i].slug}</p>
     </div>);
   }
