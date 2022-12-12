@@ -28,7 +28,7 @@ export default function Home({data}) {
       <p id="slogan">quem conta um conto, acrescenta um ponto</p>
 
       <section class="scrollport">
-        {contos}
+        {contos}gfgfgf
       </section>
 
 
