@@ -37,7 +37,7 @@ export default function Home({data}) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch('http://teste-projeto-dw.local//wp-json/wp/v2/conto');
+  const res = await fetch('http://3.8.211.202/wp-json/wp/v2/conto');
   const data = await res.json();
 
   if (!data) {
