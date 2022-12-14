@@ -24,3 +24,6 @@ JQGuQLou0M3B65IhmEd2BTrP
 
 Num terminal aberto na diretoria da pasta do projeto git, depois de dar pull:
 npm run dev
+
+Nota para mariana
+ cd /Users/mariana/Documents/testedw
