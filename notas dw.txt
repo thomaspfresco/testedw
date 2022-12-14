@@ -1,0 +1,26 @@
+npx create-next-app@latest
+Alterar para -p 3001 no package.json no projeto (se necessário)
+https://<wp-url>/wp-json/wp/v2/<post-slug>
+ 
+user
+ZZkGcTN8Tbig
+
+cat $HOME/bitnami_application_password
+
+
+IMPORTANTE -----//-----//-----
+
+Repositório GitHub:
+https://github.com/thomaspfresco/testedw
+
+Link deploy:
+https://testedw-final.vercel.app/
+
+Backoffice wordpress:
+http://3.8.211.202/wp-login.php
+
+thomaspfresco
+JQGuQLou0M3B65IhmEd2BTrP
+
+Num terminal aberto na diretoria da pasta do projeto git, depois de dar pull:
+npm run dev
