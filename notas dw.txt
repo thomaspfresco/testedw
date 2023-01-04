@@ -17,7 +17,7 @@ Link deploy:
 https://testedw-final.vercel.app/
 
 Backoffice wordpress:
-http://3.8.211.202/wp-login.php
+https://pontoconto-c3fdff.ingress-bonde.ewp.live/wp-login.php
 
 thomaspfresco
 JQGuQLou0M3B65IhmEd2BTrP
