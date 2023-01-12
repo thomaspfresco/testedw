@@ -12,7 +12,11 @@ export default function Home({data}) {
 
   //console.log(data[0].content.rendered.split(" ")[6].split('"')[1]);
 
-  //isto e um comentario
+  //isto e um comentario 
+
+  //usbeehxhdvbhdsbhx
+
+  //hsavgvewdcbhjb
 
   for (let i = 0; i < data.length; i++) {
     contos.push(<div>
