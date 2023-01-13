@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import React from 'react';
 import logo from '../images/logo.png';
 
+
 export default function Home({data}) {
 
   const contos = [];
@@ -19,13 +20,19 @@ export default function Home({data}) {
   //hsavgvewdcbhjb
 
   for (let i = 0; i < data.length; i++) {
+
     contos.push(<div>
       <img class="capa" src={data[i].content.rendered.split(" ")[6].split('"')[1]}></img>
       <p class="titulo">{data[i].slug}</p>
     </div>);
+    
   }
 
   return (
+
+    <div class="grid">
+
+    <div class="row">   
       <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -33,18 +40,27 @@ export default function Home({data}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <img id="logo" src={logo.src}></img>
+      <div class="col-t-7 col-d-7">
+      <img id="logo" src={logo.src}></img></div>
 
-      <p id="slogan">quem conta um conto, acrescenta um ponto</p>
+      <div class="col-t-5 col-d-5">
+      <p id="slogan">quem conta um conto, acrescenta um ponto</p> </div>
 
+      </div>
+    </div>
+
+    <div class="row">   
+    <div class="col-t-12 col-d-12">
       <section class="scrollport">
         {contos}
       </section>
-
-
+      </div>
     </div>
-  )
+    </div>
+    )
 }
+
+
 
 export async function getServerSideProps(context) {
   const res = await fetch('https://pontoconto-c3fdff.ingress-bonde.ewp.live/wp-json/wp/v2/conto'); //endereco
@@ -58,6 +74,6 @@ export async function getServerSideProps(context) {
   return {
     props: {
       data
-    },
+    },  
   }
-}
+} 

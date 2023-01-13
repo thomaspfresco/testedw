@@ -55,3 +55,75 @@ size: 400px;
   right: 40px;
   bottom: 40px;
 }
+
+
+.grid {
+  width: 100%;
+  padding: 0 2.040816326%; /* calc(100% * 20 / 980); */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.grid * {
+  box-sizing: border-box;
+}
+
+.row {
+  min-height: 20px;
+  clear: both;
+}
+
+[class*="col"] {
+  float: left;
+  margin-left: 2.127659574%;
+  min-height: 1px;
+}
+
+
+
+
+
+
+/*telemóveis*/
+@media screen and (max-width: 600px) {
+
+  [class*="col"] {
+      width: 100%; /*margin-left: 0; !*porque o default das colunas em mobile são 100%*!*/
+      margin: auto;
+  }
+}
+
+
+/* tablets */
+/*@media screen and (min-width: 600px) and (max-width: 768px) {*/
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+
+    [class*="col"] {
+        margin-left: 2.127659574%; /* calc(100% * 20 / 940); */
+        width: 6.38297872%; /*calc(100% * 60 / 940);*/
+    }
+  }
+
+  /* pc */
+@media screen and (min-width: 768px) and (max-width: 1140px)  {
+
+  [class*="col"] {
+      float: left;
+      margin-left: 2.127659574%; /* calc(100% * 20 / 940); */
+      width: 6.38297872%; /*calc(100% * 60 / 940);*/
+      min-height: 1px;
+      /*1.5vw*/
+  }
+}
+
+
+@media screen and (min-width: 1140px){
+
+  [class*="col"] {
+      float: left;
+      margin-left: 2.127659574%; /* calc(100% * 20 / 940); */
+      width: 6.38297872%; /*calc(100% * 60 / 940);*/
+      min-height: 1px;
+      /*1.5vw*/
+  }
+}
