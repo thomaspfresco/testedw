@@ -20,12 +20,10 @@ export default function Home({data}) {
   //hsavgvewdcbhjb
 
   for (let i = 0; i < data.length; i++) {
-
     contos.push(<div>
       <img class="capa" src={data[i].content.rendered.split(" ")[6].split('"')[1]}></img>
       <p class="titulo">{data[i].slug}</p>
     </div>);
-    
   }
 
   return (
@@ -46,17 +44,12 @@ export default function Home({data}) {
       <div class="col-t-5 col-d-5">
       <p id="slogan">quem conta um conto, acrescenta um ponto</p> </div>
 
-      </div>
-    </div>
-
-    <div class="row">   
-    <div class="col-t-12 col-d-12">
       <section class="scrollport">
         {contos}
       </section>
+    </div>
+    </div>
       </div>
-    </div>
-    </div>
     )
 }
 
